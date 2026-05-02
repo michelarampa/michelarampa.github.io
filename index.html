@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Portfolio Personale - Michela Rampa</title>
+<title>Michela Rampa - Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +16,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #0b1220;
+    color: #e5e7eb;
     line-height: 1.6;
 }
 
@@ -26,34 +26,42 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(11, 18, 32, 0.7);
+    backdrop-filter: blur(12px);
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 nav a {
-    color: #e2e8f0;
+    color: #e5e7eb;
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #60a5fa;
 }
 
 /* HERO */
 header {
     text-align: center;
-    padding: 8rem 1rem 4rem;
+    padding: 10rem 1rem 5rem;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
+    letter-spacing: -1px;
+}
+
+header p {
+    margin-top: 0.8rem;
+    opacity: 0.7;
+    font-size: 1.1rem;
 }
 
 /* SECTIONS */
@@ -64,9 +72,25 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #38bdf8;
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+p {
+    opacity: 0.85;
+}
+
+/* SKILLS */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 0.4rem 0;
+    opacity: 0.85;
 }
 
 /* PROJECTS */
@@ -77,25 +101,26 @@ h2 {
 }
 
 .project-card {
-    background: #1e293b;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: 14px;
     transition: 0.3s;
-    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
+    transform: translateY(-6px);
+    border-color: #60a5fa;
 }
 
 .project-card p {
     opacity: 0.7;
+    margin-top: 0.5rem;
 }
 
 /* CONTACT */
 .contact a {
-    color: #38bdf8;
+    color: #60a5fa;
     text-decoration: none;
 }
 
@@ -104,8 +129,9 @@ footer {
     text-align: center;
     padding: 2rem;
     opacity: 0.5;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-top: 2rem;
 }
-
 </style>
 </head>
 
@@ -120,12 +146,13 @@ footer {
 
 <header>
     <h1>Michela Rampa</h1>
+    <p>Portfolio personale</p>
 </header>
 
 <section id="about">
     <h2>Chi Sono</h2>
     <p>
-        Scrivi qui una descrizione personale più professionale. Parla di te, cosa studi o cosa fai e cosa ti piace creare.
+        Benvenuta nel mio portfolio. Qui trovi una raccolta dei miei progetti e delle mie competenze nel mondo del web e del design.
     </p>
 </section>
 
@@ -134,7 +161,7 @@ footer {
     <ul>
         <li>HTML / CSS</li>
         <li>JavaScript base</li>
-        <li>Grafica / Design</li>
+        <li>Design e creatività</li>
     </ul>
 </section>
 
@@ -144,30 +171,4 @@ footer {
     <div class="projects-grid">
         <div class="project-card">
             <h3>Progetto 1</h3>
-            <p>Sito web personale o esercizio.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Progetto 2</h3>
-            <p>Descrizione breve del progetto.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Progetto 3</h3>
-            <p>Altro progetto interessante.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Contatti</h2>
-    <p>Email: <a href="mailto:tuoemail@example.com">tuoemail@example.com</a></p>
-    <p>Instagram / LinkedIn / GitHub</p>
-</section>
-
-<footer>
-    © 2026 - Michela Rampa
-</footer>
-
-</body>
-</html>
+            <p>Si
