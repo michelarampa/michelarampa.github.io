@@ -81,4 +81,93 @@ h2 {
     padding: 1.5rem;
     border-radius: 12px;
     transition: 0.3s;
-    border: 1px solid rgba(255,255
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.project-card p {
+    opacity: 0.7;
+}
+
+/* CONTACT */
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    opacity: 0.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Competenze</a>
+    <a href="#projects">Progetti</a>
+    <a href="#contact">Contatti</a>
+</nav>
+
+<header>
+    <h1>Michela Rampa</h1>
+</header>
+
+<section id="about">
+    <h2>Chi Sono</h2>
+    <p>
+        Scrivi qui una descrizione personale più professionale. Parla di te, cosa studi o cosa fai e cosa ti piace creare.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Competenze</h2>
+    <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript base</li>
+        <li>Grafica / Design</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Progetti</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Progetto 1</h3>
+            <p>Sito web personale o esercizio.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Progetto 2</h3>
+            <p>Descrizione breve del progetto.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Progetto 3</h3>
+            <p>Altro progetto interessante.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:tuoemail@example.com">tuoemail@example.com</a></p>
+    <p>Instagram / LinkedIn / GitHub</p>
+</section>
+
+<footer>
+    © 2026 - Michela Rampa
+</footer>
+
+</body>
+</html>
