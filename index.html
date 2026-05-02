@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Michela Rampa - Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -16,9 +16,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0b1220;
+    background: #0a0f1c;
     color: #e5e7eb;
-    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* NAV */
@@ -26,13 +26,14 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(11, 18, 32, 0.7);
-    backdrop-filter: blur(12px);
+    padding: 1rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem;
+    background: rgba(10, 15, 28, 0.6);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 1000;
 }
 
 nav a {
@@ -46,54 +47,63 @@ nav a:hover {
     color: #60a5fa;
 }
 
-/* HERO */
-header {
+/* HERO STYLE APPLE */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10rem 1rem 5rem;
+    padding: 0 1rem;
+    background: radial-gradient(circle at top, #1e293b, #0a0f1c 70%);
 }
 
-header h1 {
-    font-size: 3.2rem;
+.hero h1 {
+    font-size: 4rem;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 }
 
-header p {
-    margin-top: 0.8rem;
+.hero p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
     opacity: 0.7;
-    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #60a5fa;
+    color: #0a0f1c;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #3b82f6;
 }
 
 /* SECTIONS */
 section {
     max-width: 900px;
     margin: auto;
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #60a5fa;
-    font-weight: 600;
 }
 
-p {
-    opacity: 0.85;
-}
-
-/* SKILLS */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul li {
-    padding: 0.4rem 0;
-    opacity: 0.85;
-}
-
-/* PROJECTS */
+/* CARDS */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -104,7 +114,7 @@ ul li {
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.06);
     padding: 1.5rem;
-    border-radius: 14px;
+    border-radius: 16px;
     transition: 0.3s;
 }
 
@@ -113,24 +123,12 @@ ul li {
     border-color: #60a5fa;
 }
 
-.project-card p {
-    opacity: 0.7;
-    margin-top: 0.5rem;
-}
-
-/* CONTACT */
-.contact a {
-    color: #60a5fa;
-    text-decoration: none;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
     opacity: 0.5;
     border-top: 1px solid rgba(255,255,255,0.05);
-    margin-top: 2rem;
 }
 </style>
 </head>
@@ -144,15 +142,17 @@ footer {
     <a href="#contact">Contatti</a>
 </nav>
 
-<header>
+<!-- HOMEPAGE STYLE APPLE -->
+<div class="hero">
     <h1>Michela Rampa</h1>
-    <p>Portfolio personale</p>
-</header>
+    <p>Creo esperienze digitali semplici, eleganti e moderne.</p>
+    <a href="#projects" class="btn">Scopri i miei progetti</a>
+</div>
 
 <section id="about">
     <h2>Chi Sono</h2>
     <p>
-        Benvenuta nel mio portfolio. Qui trovi una raccolta dei miei progetti e delle mie competenze nel mondo del web e del design.
+        Benvenuta nel mio portfolio. Qui trovi una selezione dei miei progetti e delle mie competenze nel web design e sviluppo front-end.
     </p>
 </section>
 
@@ -161,7 +161,7 @@ footer {
     <ul>
         <li>HTML / CSS</li>
         <li>JavaScript base</li>
-        <li>Design e creatività</li>
+        <li>Design UI/UX</li>
     </ul>
 </section>
 
@@ -171,4 +171,30 @@ footer {
     <div class="projects-grid">
         <div class="project-card">
             <h3>Progetto 1</h3>
-            <p>Si
+            <p>Sito web personale o esercizio.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Progetto 2</h3>
+            <p>Descrizione breve del progetto.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Progetto 3</h3>
+            <p>Altro progetto interessante.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contatti</h2>
+    <p>Email: tuoemail@example.com</p>
+    <p>Instagram / LinkedIn / GitHub</p>
+</section>
+
+<footer>
+    © 2026 - Michela Rampa
+</footer>
+
+</body>
+</html>
