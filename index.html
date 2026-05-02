@@ -18,7 +18,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #0a0f1c;
     color: #e5e7eb;
-    overflow-x: hidden;
 }
 
 /* NAV */
@@ -30,7 +29,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background: rgba(10, 15, 28, 0.6);
+    background: rgba(10, 15, 28, 0.75);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255,255,255,0.05);
     z-index: 1000;
@@ -40,14 +39,13 @@ nav a {
     color: #e5e7eb;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #60a5fa;
 }
 
-/* HERO STYLE APPLE */
+/* HERO (APPLE STYLE) */
 .hero {
     height: 100vh;
     display: flex;
@@ -67,22 +65,20 @@ nav a:hover {
 
 .hero p {
     margin-top: 1rem;
-    font-size: 1.2rem;
     opacity: 0.7;
+    font-size: 1.2rem;
     max-width: 600px;
 }
 
 .btn {
     margin-top: 2rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.6rem;
     background: #60a5fa;
     color: #0a0f1c;
-    border: none;
     border-radius: 999px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .btn:hover {
@@ -103,7 +99,7 @@ h2 {
     color: #60a5fa;
 }
 
-/* CARDS */
+/* PROJECTS */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -142,17 +138,17 @@ footer {
     <a href="#contact">Contatti</a>
 </nav>
 
-<!-- HOMEPAGE STYLE APPLE -->
+<!-- HOMEPAGE -->
 <div class="hero">
     <h1>Michela Rampa</h1>
-    <p>Creo esperienze digitali semplici, eleganti e moderne.</p>
+    <p>Creo esperienze digitali moderne, semplici ed eleganti.</p>
     <a href="#projects" class="btn">Scopri i miei progetti</a>
 </div>
 
 <section id="about">
     <h2>Chi Sono</h2>
     <p>
-        Benvenuta nel mio portfolio. Qui trovi una selezione dei miei progetti e delle mie competenze nel web design e sviluppo front-end.
+        Benvenuta nel mio portfolio. Qui trovi i miei progetti e le mie competenze nel mondo del web design e sviluppo front-end.
     </p>
 </section>
 
@@ -170,31 +166,3 @@ footer {
 
     <div class="projects-grid">
         <div class="project-card">
-            <h3>Progetto 1</h3>
-            <p>Sito web personale o esercizio.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Progetto 2</h3>
-            <p>Descrizione breve del progetto.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Progetto 3</h3>
-            <p>Altro progetto interessante.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contatti</h2>
-    <p>Email: tuoemail@example.com</p>
-    <p>Instagram / LinkedIn / GitHub</p>
-</section>
-
-<footer>
-    © 2026 - Michela Rampa
-</footer>
-
-</body>
-</html>
