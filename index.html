@@ -1,135 +1,179 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Personale</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f9f9f9;
-            color: #222;
-            line-height: 1.6;
-        }
-        header {
-            padding: 2rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: -1px;
-        }
-        header p { opacity: 0.7; }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Personale</title>
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #222;
-            font-weight: bold;
-            opacity: 0.7;
-            transition: opacity 0.2s;
-        }
-        nav a:hover { opacity: 1; }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-        section {
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 0 1.2rem;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .about, .skills, .projects, .contact {
-            margin-bottom: 4rem;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-        }
-        .project-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: transform 0.2s;
-        }
-        .project-card:hover { transform: translateY(-4px); }
-        .project-card h3 { margin-bottom: 0.5rem; }
-        .project-card p { opacity: 0.7; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            opacity: 0.6;
-        }
-    </style>
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+header {
+    text-align: center;
+    padding: 8rem 1rem 4rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 4rem 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.project-card p {
+    opacity: 0.7;
+}
+
+/* CONTACT */
+.contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    opacity: 0.5;
+}
+
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Nome Cognome</h1>
-        <p>Professione / Ruolo creativo</p>
-    </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Competenze</a>
-        <a href="#projects">Progetti</a>
-        <a href="#contact">Contatti</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Competenze</a>
+    <a href="#projects">Progetti</a>
+    <a href="#contact">Contatti</a>
+</nav>
 
-    <section class="about" id="about">
-        <h2>Chi Sono</h2>
-        <p>
-            Una breve presentazione professionale che descrive chi sei, cosa fai e il tuo
-            stile di lavoro. Testo semplice, pulito e diretto, perfetto per uno stile minimal.
-        </p>
-    </section>
+<header>
+    <h1>Nome Cognome</h1>
+    <p>Web Developer / Creativo / Studente</p>
+</header>
 
-    <section class="skills" id="skills">
-        <h2>Competenze</h2>
-        <ul>
-            <li>Competenze 1</li>
-            <li>Competenze 2</li>
-            <li>Competenze 3</li>
-        </ul>
-    </section>
+<section id="about">
+    <h2>Chi Sono</h2>
+    <p>
+        Scrivi qui una descrizione personale più professionale. Parla di te, cosa studi o cosa fai e cosa ti piace creare.
+    </p>
+</section>
 
-    <section class="projects" id="projects">
-        <h2>Progetti</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Progetto 1</h3>
-                <p>Descrizione breve del progetto.</p>
-            </div>
-            <div class="project-card">
-                <h3>Progetto 2</h3>
-                <p>Descrizione breve del progetto.</p>
-            </div>
-            <div class="project-card">
-                <h3>Progetto 3</h3>
-                <p>Descrizione breve del progetto.</p>
-            </div>
+<section id="skills">
+    <h2>Competenze</h2>
+    <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript base</li>
+        <li>Grafica / Design</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Progetti</h2>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Progetto 1</h3>
+            <p>Sito web personale o esercizio.</p>
         </div>
-    </section>
 
-    <section class="contact" id="contact">
-        <h2>Contatti</h2>
-        <p>Email: tuoemail@example.com</p>
-        <p>LinkedIn / Instagram / Portfolio</p>
-    </section>
+        <div class="project-card">
+            <h3>Progetto 2</h3>
+            <p>Descrizione breve del progetto.</p>
+        </div>
 
-    <footer>
-        © 2026 - Il tuo nome
-    </footer>
+        <div class="project-card">
+            <h3>Progetto 3</h3>
+            <p>Altro progetto interessante.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:tuoemail@example.com">tuoemail@example.com</a></p>
+    <p>Instagram / LinkedIn / GitHub</p>
+</section>
+
+<footer>
+    © 2026 - Il tuo nome
+</footer>
 
 </body>
 </html>
